@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: micronautguide
+  #tag::oauth2[]
+  security:
+    authentication: idtoken
+    oauth2:
+      clients:
+        okta:
+          client-secret: iBswgAjVgLgrhzw8QGBLYLCKlO7Lv4iwgH4DrTdD
+          client-id: 0oa6j62yewdFRmXgp5d7
+          openid:
+            issuer: https://dev-74151855.okta.com
+    endpoints:
+      logout:
+        get-allowed: true
+  #end::oauth2[]
+
+okta:
+  clients-secret: iBswgAjVgLgrhzw8QGBLYLCKlO7Lv4iwgH4DrTdD
+  client-id: 0oa6j62yewdFRmXgp5d7
+  issuer: https://dev-74151855.okta.com
