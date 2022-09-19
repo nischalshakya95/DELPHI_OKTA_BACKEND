@@ -1,6 +1,8 @@
 plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("io.micronaut.application") version "3.5.3"
+    id "application"
+    id 'java'
 }
 
 version = "0.1"
@@ -29,6 +31,9 @@ dependencies {
 
     implementation 'com.okta.authn.sdk:okta-authn-sdk-api:2.0.4'
     implementation 'com.okta.authn.sdk:okta-authn-sdk-impl:2.0.4'
+    implementation group: 'io.micronaut.security', name: 'micronaut-security', version: '3.8.0'
+    implementation group: 'org.reactivestreams', name: 'reactive-streams', version: '1.0.4'
+    implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.4.23'
 }
 
 
