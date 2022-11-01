@@ -34,6 +34,9 @@ dependencies {
     implementation group: 'io.micronaut.security', name: 'micronaut-security', version: '3.8.0'
     implementation group: 'org.reactivestreams', name: 'reactive-streams', version: '1.0.4'
     implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.4.23'
+
+    implementation group: 'com.okta.jwt', name: 'okta-jwt-verifier', version: '0.5.7'
+    implementation group: 'com.okta.jwt', name: 'okta-jwt-verifier-impl', version: '0.5.7'
 }
 
 
